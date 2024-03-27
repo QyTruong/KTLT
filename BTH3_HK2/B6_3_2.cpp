@@ -35,7 +35,6 @@ int main(){
     nhap(a,n);
     reverse(a,n);
     xuat(a,n);
-    reverse(a,n);
     delete []a;
     return 0;
 }
