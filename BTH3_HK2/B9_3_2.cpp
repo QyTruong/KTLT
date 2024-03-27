@@ -49,7 +49,7 @@ int main(){
     }
     nhap(*&a,r,c);
     xuat(*&a,r,c);
-    cout << "Tong gia tri cua cac so trong mang 2 chieu: " << check_tongsnt(*&a,r,c);
+    cout << "Tong gia tri cua cac so nguyen to trong mang 2 chieu: " << check_tongsnt(*&a,r,c);
 
     for (int i = 0; i < r; i++){
         delete []a[i];
