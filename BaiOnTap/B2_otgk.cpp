@@ -264,7 +264,7 @@ int isAm(int n){
 
 //  Kiểm tra mảng có số dương không?
 int isDuong(int n){
-    return !isAm;
+    return !isAm(n);
 }
 
 // Kiểm tra mảng có số nguyên tố không?
