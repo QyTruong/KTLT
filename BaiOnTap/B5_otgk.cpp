@@ -4,7 +4,7 @@ using namespace std;
 
 
 int used[100];
-string ten[6] = {"Truong","Tung","Hung","Quan","Viet", "Toan"};
+string ten[7] = {"Truong","Tung","Hung","Quan","Viet", "Toan"};
 string maytinh[6] = {"MT1","MT2","MT3","MT4","MT5", "MT6"};
 
 void nhap(int a[], int& n);
@@ -40,8 +40,8 @@ int main(){
     cout << "Nhap n: "; cin >> n;
     cout << "Nhap k: "; cin >> k;
     cout << "\tXuat cac hoan vi:\n";
-    sinh_hoanvi(1,A,n, n, xuat_hoanvi);
-    cout << "\tXuat cac cho ngoi\n";
+    // sinh_hoanvi(1,A,n, n, xuat_hoanvi);
+    // cout << "\tXuat cac cho ngoi\n";
     sinh_hoanvi(1,A,n, k, xuat_cho_ngoi);
     return 0;
 }
@@ -175,8 +175,8 @@ void xuat_hoanvi(int a[], int n){
 // Xuất các chỗ ngồi n chập k
 void xuat_cho_ngoi(int a[], int n){
     for (int i = 1; i <= n; i++){
-        cout << ten[i] << " - ";
-        cout << maytinh[a[i]-1] << "\t";
+        cout << maytinh[i-1] << " - ";
+        cout << ten[a[i]-1] << "\t";
     }
     cout << endl;
 }
