@@ -314,7 +314,7 @@ int* find_last_sht(int* a, int n){
 int* find_first_min(int* a, int n){
     if (a != NULL){
         for (int i = 0; i < n; i++){
-            if (a[i] < a[i+1]);
+            if (a[i] < a[i+1])
                 return &a[i];
         }
         return &a[n-1];
