@@ -390,7 +390,7 @@ int* gopMang(int* a, int n, int* b, int m){
             for (int i = 0; i < n; i++){
                 c[cnt++] = a[i];
             }
-            for (int i = 0; i < n; i++){
+            for (int i = 0; i < m; i++){
                 c[cnt++] = b[i];
             }
         }
